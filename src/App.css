@@ -1,0 +1,101 @@
+.app-header {
+  text-align: center;
+  color: black;
+}
+
+.nav-page{
+  z-index: 0;
+}
+
+.App{
+  background-image: url('./images/manifesto.jpeg');
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
+}
+
+.App > h1{
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  transform: scale(3);
+  text-decoration: underline;
+  border: 5px solid whitesmoke;
+}
+
+.t-box{
+  position: fixed;
+  top : 70%;
+  left : 70%;
+  transform: scale(1.2);
+  font-weight: bolder;
+}
+
+.body{
+  color: black;
+}
+
+.bg-black {
+  background-color : black;
+}
+
+.torch{
+  height: 200px;
+  width : 200px;
+  background-color: red;
+  border-radius: 100%;
+  opacity: 30%;
+  z-index : 5;
+}
+
+.art-container{
+  width: 1080px;
+  height: 764px;
+  cursor: none;
+}
+
+.int-red{
+  left: 0;
+  right : 0;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.int-green{
+  left: 0;
+  right : 0;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+.int-blue{
+  left: 0;
+  right : 0;
+  mix-blend-mode: multiply;
+  z-index: 3;
+}
+
+.video-player{
+  flex-grow: 5 !important;
+}
+
+.prev{
+  top : 50%;
+}
+
+.next{
+  top : 50%;
+  right : 0;
+}
+
+
+.ml-auto{
+  margin-left: auto !important;
+}
