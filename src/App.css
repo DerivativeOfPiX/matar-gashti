@@ -7,6 +7,16 @@
   z-index: 0;
 }
 
+.spacer{
+  height : 20px;
+  width : 100%;
+}
+
+.sub-center {
+  top : 50%;
+  left : 35%;
+}
+
 .App{
   background-image: url('./images/manifesto.jpeg');
    /* Full height */
@@ -36,6 +46,28 @@
   left : 70%;
   transform: scale(1.2);
   font-weight: bolder;
+}
+
+.home-img{
+  background-image: url('./images/walk.jpeg') ;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img > p {
+  text-decoration: underline;
+  border: 5px solid whitesmoke;
+}
+
+.ins-img{
+  height : 900px;
 }
 
 .body{

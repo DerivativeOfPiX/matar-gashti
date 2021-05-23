@@ -31,7 +31,7 @@ export default function App() {
       <div className="z-1">
         <Router>
           <div>
-            <nav className="px-3 pt-sm-3 navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="px-3 pt-sm-3 navbar navbar-expand-lg navbar-dark bg-black">
               <h1 className="h1 text-white font-weight-bold" href="#">مٹر گشتی</h1>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

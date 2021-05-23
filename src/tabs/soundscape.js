@@ -28,7 +28,7 @@ export default function SoundScape() {
 
     function Subtitle() {
         return (
-            <div className="position-absolute p-2 rounded top-50 start-50 translate-middle">
+            <div className="p-2 position-absolute sub-center rounded">
                 <p className="text-center text-large text-white font-weight-italic">
                     {playlist[v_index].subtitle.split("\n").map((i, key) => {
                         return <p key={key}>{i}</p>;
