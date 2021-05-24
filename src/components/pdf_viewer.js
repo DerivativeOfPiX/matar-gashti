@@ -24,13 +24,7 @@ export default function PDFviewer(props) {
         changePage(1);
     }
     return (<div>
-        <Document
-            file={props.pdffile}
-            onLoadSuccess={onDocumentLoadSuccess}
-        >
-            <Page pageNumber={pageNumber} />
-        </Document>
-        <div>
+        <div className="text-center">
             <p>
                 Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
             </p>
@@ -49,5 +43,12 @@ export default function PDFviewer(props) {
                 Next
         </button>
         </div>
+        <Document
+            file={props.pdffile}
+            onLoadSuccess={onDocumentLoadSuccess}
+            className="m-auto"
+        >
+            <Page className="m-auto" pageNumber={pageNumber} />
+        </Document>
     </div>)
 }

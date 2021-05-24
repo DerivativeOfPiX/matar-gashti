@@ -12,10 +12,16 @@ import SoundScape from "./tabs/soundscape"
 import CitySights from "./tabs/citysights"
 import Reflections from "./tabs/reflections"
 import logo from './images/site-logo.png'
+import headerlogo from './images/logo-header.png'
 
 export default function App() {
   const [visiblity, setVisibility] = useState(false)
   const [proceed, setProceed] = useState(false)
+
+  document.body.style.overflow = "hidden"
+  if(proceed){
+    document.body.style.overflow = ""
+  }
 
   return (
     <div>
@@ -35,7 +41,7 @@ export default function App() {
         <Router>
           <div>
             <nav className="px-3 py-4 pt-sm-3 navbar navbar-expand-lg navbar-dark bg-black">
-              <h1 className="h1 text-white font-weight-bold" href="#">مٹر گشتی</h1>
+              <img className="py-3 w-15 h-15 img-fluid" src={headerlogo}></img>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>

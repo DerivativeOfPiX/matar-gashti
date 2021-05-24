@@ -14,10 +14,11 @@ export default function Reflections(props) {
                     <h1 className="text-center">Mattar Gashti Zine</h1>
                     <PDFviewer pdffile={artbook} />
                 </div>
-                <div className="m-auto  my-2">
+                <div className="m-auto my-2">
                     <h1 className="text-center">Samandar Mei Dafan Hai Humare Aanson Zine </h1>
                     <PDFviewer pdffile={samandar} />
                 </div>
+
                 <div className="m-auto my-2">
                     <h1 className="text-center">The Skies</h1>
                     <PDFviewer pdffile={skies} />

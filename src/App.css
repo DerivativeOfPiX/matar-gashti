@@ -199,5 +199,30 @@
 }
 
 .bg-sub{
-  background-color: rgba(1, 1, 1, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+.sub-text{
+  color : rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bolder !important;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.w-15{
+  width : 15% !important;
+}
+
+.h-15{
+  height : 15% !important;
+}
+
+.hide > img{
+  display: block;
+  line-height:0;
+  height: 0 !important;
+  overflow: hidden;
 }

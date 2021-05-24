@@ -1,5 +1,6 @@
 import insimg from '../images/walk2.jpeg'
 import anita from '../images/anita.jpg'
+import hamza from '../images/hamza.jpg'
 
 export default function Home() {
     return (
@@ -59,7 +60,20 @@ export default function Home() {
                             Her artistic mediums offer illustrated reminiscences of things she experiences in this city.<br/>
                             The content and design on this site is created by her.<br/>
                         </p>
+                        <p className="text-white font-weight-bold text-center py-2"><b>instagram: @fiercedork // email: anitazehra2@gmail.com</b></p>
                     </div>
+                </div>
+            </div>
+            <div className="bg-black">
+                <h1 className="text-lg text-white font-weight-bold text-center mt-2 pt-5 mx-3">Website Designer</h1>
+                <div className="d-flex flex-row align-items-center justify-content-between">
+                    <div className="w-75 p-2 font-weight-bold border border-white about-text">
+                        <p className="text-white text-center m-2">Hamza Asad is a student at Habib University, currently a rising sophomore.<br/>
+                        He studies Computer Sciences and has a passion for developing video games some day.<b/>
+                        </p>
+                        <a className="m-auto text-center" href="https://derivativeofpix.github.io/">Personal Website</a>
+                    </div>
+                    <div className="m-5 w-50"><img className="w-100 h-100" src={hamza} alt=""/></div>
                 </div>
             </div>
 
