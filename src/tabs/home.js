@@ -1,5 +1,3 @@
-import Card from "../components/card"
-import next from "../images/next.png"
 import insimg from '../images/walk2.jpeg'
 
 export default function Home() {
@@ -39,7 +37,7 @@ export default function Home() {
                         </ol>
                     </div>
                     <div className="h-25">
-                        <img className="ins-img m-5" src={insimg}/>
+                        <img alt="" className="ins-img m-5" src={insimg}/>
                     </div>
                 </div>
             </div>

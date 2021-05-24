@@ -9,7 +9,7 @@ function InteractiveArt(){
     const [color, setColor] = useState("red")
 
     function moveTorch(e, cur_color){
-        let layer1, layer2, torch, pos, layer_r, layer_g, layer_b;
+        let layer1, layer2, torch, layer_r, layer_g, layer_b;
 
         layer_b = document.getElementsByClassName("int-blue")[0];
         layer_r = document.getElementsByClassName("int-red")[0];
@@ -46,7 +46,7 @@ function InteractiveArt(){
             default:
                 console.log("NO COLOR WAS SPECIFIED")
         }
-        pos = torch.getBoundingClientRect()
+        //pos = torch.getBoundingClientRect()
         layer1.style.clipPath = `circle(100px at ${torch.offsetLeft - 320}px ${torch.offsetTop - 110}px)`;
         layer2.style.clipPath = `circle(100px at ${torch.offsetLeft - 320}px ${torch.offsetTop - 110}px)`;
     }

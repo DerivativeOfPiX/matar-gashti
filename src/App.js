@@ -22,7 +22,7 @@ export default function App() {
       <div className={proceed ? "invisible" : "visible"}>
         <div className={visiblity ? "App-hover" : "App"}>
           <div className="position-absolute w-100 h-100 m-auto">
-            <img src={logo} onMouseEnter={() => setVisibility(true)} className="p-3 w-50 logo"></img>
+            <img src={logo} onMouseEnter={() => setVisibility(true)} alt="" className="p-3 w-50 logo"></img>
             <div onMouseLeave={() => setVisibility(false)} className={visiblity ? 'visible' : 'invisible'}>
               <div className="t-box d-flex flex-column justify-content-center">
                 <p className="p-3 text-white w-50">
