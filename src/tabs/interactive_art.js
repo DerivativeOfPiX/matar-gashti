@@ -9,8 +9,18 @@ function InteractiveArt(){
     const [color, setColor] = useState("red")
 
     function moveTorch(e, cur_color){
-        let layer1, layer2, torch, pos;
-        //clear any clippaths
+        let layer1, layer2, torch, pos, layer_r, layer_g, layer_b;
+
+        layer_b = document.getElementsByClassName("int-blue")[0];
+        layer_r = document.getElementsByClassName("int-red")[0];
+        layer_g = document.getElementsByClassName("int-green")[0];
+
+        //clear any clippaths ideally should be onStateChange
+        layer_r.style.clipPath = 'none';
+        layer_g.style.clipPath = 'none';
+        layer_b.style.clipPath = 'none';
+    
+        
         torch = document.getElementsByClassName("torch")[0];
         //console.log(torch)
         torch.style.left = (e.pageX).toString() + 'px';
@@ -19,19 +29,19 @@ function InteractiveArt(){
         
         switch(cur_color){
             case "green":
-                layer1 = document.getElementsByClassName("int-blue")[0];
-                layer2 = document.getElementsByClassName("int-red")[0];
-                document.getElementsByClassName("int-red")[0].style.visiblity= 'visible';
+                layer1 = layer_b;
+                layer2 = layer_r;
+                layer_g.style.visiblity= 'hidden';
                 break;
             case "blue":
-                layer1 = document.getElementsByClassName("int-green")[0];
-                layer2 = document.getElementsByClassName("int-red")[0];
-                document.getElementsByClassName("int-red")[0].style.visiblity= 'visible';
+                layer1 = layer_g;
+                layer2 = layer_r;
+                layer_b.style.visiblity= 'hidden';
                 break;
             case "red":
-                layer1 = document.getElementsByClassName("int-green")[0];
-                layer2 = document.getElementsByClassName("int-blue")[0];
-                document.getElementsByClassName("int-red")[0].style.visiblity= 'hidden';
+                layer1 = layer_g;
+                layer2 = layer_b;
+                layer_r.style.visiblity= 'hidden';
                 break;
             default:
                 console.log("NO COLOR WAS SPECIFIED")
@@ -51,10 +61,10 @@ function InteractiveArt(){
             </div>
             <p className="w-25 rounded m-auto text-center text-white bg-black p-3 font-weight-italic">light : {color}</p>
             <div className="spacer"/>
-            <div onMouseMove={(e) => {moveTorch(e, color)}} className="art-container m-auto border border-dark position-relative bg-white">
-                <img src={red} alt="red layer" className="int-red mw-100 mh-100 mx-auto position-absolute text-center"></img>
-                <img src={green} alt="green layer" className="int-green mw-100 mh-100 mx-auto position-absolute text-center"></img>
-                <img src={blue} alt="blue layer" className="int-blue mw-100 mh-100 mx-auto position-absolute text-center"></img>
+            <div onMouseMove={(e) => {moveTorch(e, color)}} className="art-container w-100 m-auto border border-dark position-relative bg-white">
+                <img src={red} alt="red layer" className="int-red w-100 h-auto m-auto position-absolute text-center"></img>
+                <img src={green} alt="green layer" className="int-green w-100 h-auto m-auto position-absolute text-center"></img>
+                <img src={blue} alt="blue layer" className="int-blue w-100 h-auto m-auto position-absolute text-center"></img>
             </div>
         </div>
     )

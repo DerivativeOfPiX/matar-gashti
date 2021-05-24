@@ -29,6 +29,21 @@
    z-index: 1;
 }
 
+.App-hover{
+  background-image: url('./images/manifesto_hover.jpeg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.logo{
+  position : absolute;
+  left : 50%;
+}
+
+
 .App > h1{
   position: fixed; /* or absolute */
   top: 50%;
@@ -40,12 +55,21 @@
   border: 5px solid whitesmoke;
 }
 
+.popup{
+  top : 50%;
+  left : 50%
+}
+
 .t-box{
   position: fixed;
-  top : 70%;
-  left : 70%;
+  top : 60%;
+  left : 10%;
   transform: scale(1.2);
-  font-weight: bolder;
+  font-weight:lighter;
+}
+
+.t-box > p{
+  background-color: rgba(1, 1, 1, 0.7);
 }
 
 .home-img{
@@ -88,8 +112,8 @@
 }
 
 .art-container{
-  width: 1080px;
-  height: 764px;
+  width: 2715px;
+  height: 1920px;
   cursor: none;
 }
 
@@ -114,8 +138,38 @@
   z-index: 3;
 }
 
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: #ccc;
+}
+
+.popup{
+  position : fixed;
+  width: 25%;
+  margin: auto;
+  z-index: 3;
+  left : 40%;
+  top : 40%;
+}
+
+.popup > button{
+  position: absolute;
+  left : 100%;
+}
+
+.player-wrapper{
+  position: relative;
+  padding-top: 75% /* Player ratio: 100 / (1280 / 720) */
+}
+
 .video-player{
-  flex-grow: 5 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .prev{
@@ -130,4 +184,8 @@
 
 .ml-auto{
   margin-left: auto !important;
+}
+
+.descbutt{
+  right: 5px;
 }
