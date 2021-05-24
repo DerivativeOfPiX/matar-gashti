@@ -2,17 +2,10 @@ import red from '../images/red.png';
 import green from '../images/green.png';
 import blue from '../images/blue.png'
 import React, { useState } from 'react'
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
 
 
 function InteractiveArt() {
 
-    const slideImages = [
-        '../images/red.png',
-        '../images/green.png',
-        '../images/blue.png'
-      ];
 
     const [color, setColor] = useState("no color selected")
 
@@ -58,8 +51,8 @@ function InteractiveArt() {
         //torch.style.backgroundColor = color;
 
         //pos = torch.getBoundingClientRect()
-        layer1.style.clipPath = `circle(150px at ${e.pageX + window.pageXOffset - 300}px ${e.pageY + window.pageYOffset - 500}px)`;
-        layer2.style.clipPath = `circle(150px at ${e.pageX + window.pageXOffset - 300}px ${e.pageY + window.pageYOffset - 500}px)`;
+        layer1.style.clipPath = `circle(120px at ${e.pageX - 200}px ${e.pageY - 500}px)`;
+        layer2.style.clipPath = `circle(120px at ${e.pageX - 200}px ${e.pageY - 500}px)`;
         //layer3.style.clipPath = `circle(150px at ${e.pageX + window.pageXOffset - 300}px ${e.pageY + window.pageYOffset - 500}px)`;
     }
 
