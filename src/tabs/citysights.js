@@ -22,8 +22,8 @@ export default function CitySights(props) {
             <div className="my-3">
                 <button className="btn btn-danger d-flex m-auto p-3" onClick={() => setProceed(false)}>Description</button>
             </div>
-                <div className="player-wrapper">
-                    <ReactPlayer width="100%" height="100%" className="m-auto video-player rounded" url="https://youtu.be/tgZ2auX1eG0" />
+                <div className="player-wrapper m-5">
+                    <ReactPlayer width="100%" height="100%" className="video-player" url="https://youtu.be/tgZ2auX1eG0" />
                 </div>
             </div>
         </div>

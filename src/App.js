@@ -20,19 +20,16 @@ export default function App() {
   return (
     <div>
       <div className={proceed ? "invisible" : "visible"}>
-        <div className={visiblity ? "App-hover" : "App"}>
-          <div className="position-absolute w-100 h-100 m-auto">
-            <img src={logo} onMouseEnter={() => setVisibility(true)} alt="" className="p-3 w-50 logo"></img>
-            <div onMouseLeave={() => setVisibility(false)} className={visiblity ? 'visible' : 'invisible'}>
+          <div className={visiblity ? "App-hover position-absolute w-100 h-100 m-auto" : "App position-absolute w-100 h-100 m-auto"}>
+            <img onClick={() => setProceed(true)} src={logo} onMouseEnter={() => setVisibility(true)} alt="" className="p-3 w-50 logo"></img>
+            <div  onMouseLeave={() => setVisibility(false)} className={visiblity ? 'visible' : 'invisible'}>
               <div className="t-box d-flex flex-column justify-content-center">
                 <p className="p-3 text-white w-50">
-                Behind this screen sits a mattargasht, mapping her personal wanders in Karachi. This website is a short attempt at re-evaluating, and re-morphing the survivable glimpses of Karachi. By no means is it unpacking to glorify the state, rather it is a narrowed look at the city- a city that we have all somehow managed to survive in and found unruly ways to meditate in.
+                Behind this screen sits a mattargasht, mapping her personal wanders in Karachi. This website is a short attempt at re-evaluating, and re-morphing the survivable glimpses of Karachi. By no means is it unpacking to glorify the state, rather it is a narrowed look at the city- a city that we have all somehow managed to survive in and found unruly ways to meditate in. Click on the mattargashti logo to begin.
                 </p>
-                <button className="btn btn-light w-25 py-2" onClick={() => setProceed(true)}>Tashreef Laiye</button>
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div className="z-1">
         <Router>
@@ -54,10 +51,10 @@ export default function App() {
                     <Link className="nav-link" to="/sound">Sounds of the City</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/video">City Sights</Link>
+                    <Link className="nav-link" to="/video">Liminally Karachi</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/reflections">Reflections</Link>
+                    <Link className="nav-link" to="/reflections">Written City</Link>
                   </li>
                 </ul>
               </div>

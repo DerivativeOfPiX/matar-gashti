@@ -68,6 +68,14 @@
   font-weight:lighter;
 }
 
+.about-text{
+  margin-right: 100px;
+}
+
+.h-0{
+  height : 0px;
+}
+
 .t-box > p{
   background-color: rgba(1, 1, 1, 0.7);
 }
@@ -163,7 +171,7 @@
 
 .player-wrapper{
   position: relative;
-  padding-top: 75% /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 60% /* Player ratio: 100 / (1280 / 720) */
 }
 
 .video-player{
@@ -188,4 +196,8 @@
 
 .descbutt{
   right: 5px;
+}
+
+.bg-sub{
+  background-color: rgba(1, 1, 1, 0.1);
 }

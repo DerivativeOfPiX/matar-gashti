@@ -31,10 +31,10 @@ export default function SoundScape() {
 
     function Subtitle() {
         return (
-            <div className="p-2 text-align-center rounded">
-                <div className="text-center text-large text-white font-weight-italic">
+            <div className="p-2 text-align-center w-25 rounded position-fixed int-red bg-white m-auto">
+                <div>
                     {playlist[v_index].subtitle.split("\n").map((i, key) => {
-                        return <p key={key}>{i}</p>;
+                        return <p className="text-dark text-center" key={key}>{i}</p>;
                     })}
                 </div>
             </div>
