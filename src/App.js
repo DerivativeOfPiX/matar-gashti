@@ -41,7 +41,7 @@ export default function App() {
         <Router>
           <div>
             <nav className="px-3 py-4 pt-sm-3 navbar navbar-expand-lg navbar-dark bg-black">
-              <img className="py-3 w-15 h-15 img-fluid" src={headerlogo}></img>
+              <img className="py-3 w-15 h-15 img-fluid" src={headerlogo} alt="header logo"></img>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
