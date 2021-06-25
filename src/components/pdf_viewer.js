@@ -1,4 +1,4 @@
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page } from 'react-pdf';
 import React, { useState } from 'react'
 
 

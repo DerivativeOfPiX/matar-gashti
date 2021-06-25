@@ -13,7 +13,7 @@ function InteractiveArt() {
         if (cur_color === "no color selected") {
             return
         }
-        let layer1, layer2, layer3, layer_r, layer_g, layer_b;
+        let layer1, layer2, layer_r, layer_g, layer_b;
 
         layer_b = document.getElementsByClassName("int-blue")[0];
         layer_r = document.getElementsByClassName("int-red")[0];
@@ -28,17 +28,14 @@ function InteractiveArt() {
             case "green":
                 layer1 = layer_b;
                 layer2 = layer_r;
-                layer3 = layer_g
                 break;
             case "blue":
                 layer1 = layer_g;
                 layer2 = layer_r;
-                layer3 = layer_b
                 break;
             case "red":
                 layer1 = layer_g;
                 layer2 = layer_b;
-                layer3 = layer_r
                 break;
             default:
                 console.log("NO COLOR WAS SPECIFIED")
