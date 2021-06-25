@@ -1,6 +1,6 @@
-import artbook from "../pdfs/artistbook_web.pdf"
-import samandar from "../pdfs/samandar_web.pdf"
-import skies from "../pdfs/skies_web.pdf"
+import artbook from "./artistbook_web.pdf"
+import samandar from "./samandar_web.pdf"
+import skies from "./skies_web.pdf"
 
 import PDFviewer from "../components/pdf_viewer"
 
